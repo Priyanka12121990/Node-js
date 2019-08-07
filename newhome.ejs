@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<table border="solid 1px;">
+		<tr>
+			<th colspan="3">Customer Details</th>
+		</tr>
+		<tr>
+			<th>Customer Number</th>
+			<th>Name</th>
+			<th>Phone</th>
+		</tr>
+		<% for (let i=0 ; i < obj.print.length ; i++ ){ %>
+			<tr>
+			<td><%= obj.print[i].customerNumber %></td>
+			<td><%= obj.print[i].customerName %></td>
+			<td><%= obj.print[i].phone %></td>
+			</tr>
+			<% } %>
+		
+	</table>
+
+</body>
+</html>
