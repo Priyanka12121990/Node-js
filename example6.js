@@ -1,31 +1,29 @@
 class Telephone {
-	setbrand(){
+	setbrand() {
 		this.brand="OnePlus6t";
 	}
-	doCall(){
+	doCall() {
 		console.log(this.brand+" can do call");
 	}
-	
- 	doSms(){
+	doSms() {
 		console.log(this.brand+" can do sms");
 	}
-
-	playGame(){
+	playGame() {
 		console.log(this.brand+" can play game");
 	}
 }
 
-class Mobile extends Telephone{
+class Mobile extends Telephone {
 
-	playMusic(){
+	playMusic() {
 		console.log(this.brand+" mobile can play music, its color is "+this.color+", price is "+this.price+" and its a "+this.type+" phone");
 	}
 
-	playVideo(){
+	playVideo() {
 		console.log(this.brand+" mobile can play video, its color is "+this.color+", price is "+this.price+" and its a "+this.type+" phone");
 	}
 
-	takePhoto(){
+	takePhoto() {
 		console.log(this.brand+" mobile can take photos, its color is "+this.color+", price is "+this.price+" and its a "+this.type+" phone");
 	}
 }
