@@ -8,7 +8,7 @@ fs.readFile('student.js', 'utf8', function(err, data) {
     	obj.student.push({"name":"sunil","age":24}); //add data
     	json = JSON.stringify(obj); //convert it back to json
     	
-	fs.writeFile("student.js", json , (err) => {
+	fs.writeFile("student.js", json, (err) => {
     		if (err) {
         		console.error(err);	
         		return;
