@@ -43,12 +43,11 @@ var student_data = {
 
 
 app.get('/', (req, res) => {
-  if(req.headers.auth == "mobiotics") {
-  	  res.send(req.headers);
+  	if(req.headers.auth == "mobiotics") {
+  	  	res.send(req.headers);
   	} else {
-  		res.status(401).send("not valid")
+  		res.status(401).send("not valid");
   	}
-
 })
 
 app.get('/students', (req, res) => {
@@ -91,8 +90,7 @@ app.get('/students/:lower_age/:higher_age', (req, res) => {
   	  	var studentArray = student_data.students;
   	  	newStudentArray = [];
   	  	for (var i = 0; i < studentArray.length; i++) {
-                                                                                          	  		
-  	  		if(studentArray[i].Age >= req.params.lower_age || studentArray[i].Age <= req.params.higher_age){
+                        if(studentArray[i].Age >= req.params.lower_age || studentArray[i].Age <= req.params.higher_age) {
   	  			newStudentArray.push(studentArray[i]);
   	  		}
   	  	}
@@ -102,12 +100,11 @@ app.get('/students/:lower_age/:higher_age', (req, res) => {
   	}
 });
 
-app.get("*",(req,res)=>{
+app.get("*", (req, res) => {
      	res.status(404).send( {"Message": "invalid information"});
 });
 	
 
 
-app.listen(3000,(rep) => {
-  
+app.listen("3000", (rep) => {
 });
