@@ -20,6 +20,7 @@ calculator.prototype.div = function() {
 } 
 
 var cal_obj = new calculator(20, 10);
+
 console.log(cal_obj.add());
 console.log(cal_obj.sub());
 console.log(cal_obj.mul());
