@@ -16,11 +16,9 @@ app.post('/', (req, res) => {
 app.post('/form', (req, res) => {
   //req.fields; // contains non-file fields
   //req.files; // contains files
-
   res.send(req.fields);
-
 });
 
-app.listen("3000",(rep) => {
+app.listen("3000", (rep) => {
   console.log("server connected");
 });
